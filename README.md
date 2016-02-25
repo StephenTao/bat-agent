@@ -1,15 +1,15 @@
-# highlander-agent
+# bat-agent
 
-##Highlander agent  consiste of 3 server components 
+##bat agent  consiste of 3 server components 
 1. RPC server
 2. Listener Server
 3. NodeJs server
 
 ###Setting up higlander agent for stratus cloud.  
 On each hypervisor check out the code and run 3 server components  
-* git clone https://github.com/stratustech/highlander-agent.git  
+* git clone https://github.com/stratustech/bat-agent.git  
 * edit rabbitmq infomation in the following file  
-      * /highlander-agent/highlander_agent/config.cfg  
+      * /bat-agent/bat_agent/config.cfg  
         ```
         [RabbitMQ]  
         ```  
@@ -25,11 +25,11 @@ On each hypervisor check out the code and run 3 server components
       Do not change anything else.
 * 
  ```
- cd highlander-agent/highlander_agent
+ cd bat-agent/bat_agent
  ```
 * Run setup to download all dependencies
     ```
-     highlander-agent$> python setup.py develop
+     bat-agent$> python setup.py develop
      ```
 * Run RPC server
      ```
@@ -58,7 +58,7 @@ At this point application is ready to test
 #####To stop server use -s stop and -l stop 
 
 #Testing
-sample instance configuration file is   https://github.com/stratustech/highlander-agent/blob/master/highlander_agent/config/rpc_example.json  
+sample instance configuration file is   https://github.com/stratustech/bat-agent/blob/master/bat_agent/config/rpc_example.json  
 ##RPC Client  
 Use rpc client for debugging or standalone testing, Change instance id in  rpc_example.json if required  
 
